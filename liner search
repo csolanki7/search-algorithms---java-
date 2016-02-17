@@ -1,0 +1,26 @@
+package com.java2novice.algos;
+ 
+    public class MyLinearSearch {
+ 
+    public static int linerSearch(int[] arr, int key){
+         
+        int size = arr.length;
+        for(int i=0;i<size;i++){
+            if(arr[i] == key){
+                return i;
+            }
+        }
+        return -1;
+    }
+     
+    public static void main(String a[]){
+         
+        int[] arr1= {22,57,78,43,63,91,16};
+        int searchKey = 34;
+        System.out.println("Key "+searchKey+" found at index: "+linerSearch(arr1, searchKey));
+        int[] arr2= {123,445,421,595,2134,41,304,190};
+        searchKey = 421;
+        System.out.println("Key "+searchKey+" found at index: "+linerSearch(arr2, searchKey));
+    }
+}
+- See more at: http://www.java2novice.com/java-search-algorithms/linear-search/#sthash.ha8TqWrO.dpuf
